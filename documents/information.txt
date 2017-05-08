@@ -1,0 +1,11 @@
+gging into Control Box
+
+ssh ansible@control
+
+ssh-keygen -t rsa
+ssh ansible@control
+create folder .ssh in ansible user directory
+edit .ssh/authorized_keys file paste the trusted.public key file into it.
+vi .ssh/authorized_keys
+
+ssh -i ansible/testkey ansible@control
